@@ -1,0 +1,317 @@
+.single-main-content {
+    max-width: 925px;
+    width: 100%;
+    margin: 69px 68px 68px 226px;
+}
+
+ol {
+    padding-left: 30px;
+}
+
+.single-post-title {
+    color: #261d1d;
+    font-family: "Orpheus Pro", sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 70px;
+    text-align: left;
+}
+
+.single-post-description {
+    color: #484a4b;
+    font-family: "Orpheus Pro", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 38px;
+    text-align: left;
+}
+
+.author-published {
+    margin-bottom: 30px;
+}
+
+.published {
+    margin-left: 50px;
+}
+
+.single-image-caption {
+    color: #464646;
+    font-family: "Bebas Neue Pro", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 28px;
+    text-align: left;
+}
+
+.single-post-image {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.single-post-auto {
+    color: #261d1d;
+    font-family: Yrsa, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 35px;
+    text-align: left;
+}
+
+.twitter-single-post {
+    content: url(/wp-content/themes/norskgolf/assets/images/twitter.svg);
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.mail-single-post {
+    content: url(/wp-content/themes/norskgolf/assets/images/mail.svg);
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.facebook-single-post {
+    content: url(/wp-content/themes/norskgolf/assets/images/facebook.svg);
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.single-posts-links {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 40px;
+    margin-top: 100px;
+
+    span {
+        color: #484a4b;
+        font-family: "Bebas Neue Pro", sans-serif;
+        font-size: 20px;
+        line-height: 35px;
+        text-align: left;
+    }
+}
+
+.single-links-images {
+    display: flex;
+    column-gap: 10px;
+}
+
+.single-post-category-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 20px auto;
+    column-gap: 19px;
+    row-gap: 19px;
+}
+
+.bread-crumb {
+    a {
+        position: relative;
+        margin: 20px 0 0 40px;
+    }
+
+    span {
+        margin: 20px 0 0 40px;
+    }
+}
+
+.single-post-category-block {
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: -3px;
+    }
+
+    max-width: 24%;
+    width: 100%;
+    @media (max-width: 1400px) {
+        max-width: 31%;
+    }
+    @media (max-width: 1400px) {
+        max-width: 48%;
+    }
+    @media (max-width: 600px) {
+        max-width: 100%;
+    }
+
+    &:nth-child(1), &:nth-child(2) {
+        max-width: 49.3%;
+        @media (max-width: 1400px) {
+            max-width: 48%;
+        }
+        @media (max-width: 600px) {
+            max-width: 100%;
+        }
+    }
+}
+
+.single-post-category-content {
+    background-color: #efefef;
+}
+
+.category-text {
+    padding: 15px 30px 20px 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-post-cat {
+    cursor: pointer;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: "Bebas Neue Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.single-post-category-description {
+    color: #221c1c;
+    font-family: "Bebas Neue Pro", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: left;
+}
+
+.single-post-category-title {
+    text-decoration: none;
+    color: #261d1d;
+    font-family: "Orpheus Pro", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+}
+
+.single-post-container {
+    background-color: #efefef;
+}
+
+.category-main-title {
+    color: #261d1d;
+    font-family: "Orpheus Pro", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 20px;
+    margin-left: 236px;
+}
+
+.all-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.single-second-column-image {
+    img {
+        border-radius: 5px;
+        width: 101px;
+        height: 101px;
+        object-fit: cover;
+    }
+}
+
+.single-second-column {
+    display: flex;
+    row-gap: 20px;
+    max-width: 350px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.single-second-column-text {
+    margin-top: 15px;
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+}
+
+.single-second-column-post {
+    display: flex;
+    column-gap: 10px;
+    flex-direction: row;
+}
+
+.single-post-date {
+    color: #746e6e;
+    font-family: "Bebas Neue Pro", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+}
+
+.single-second-column-post-title {
+    color: #261d1d;
+    max-width: 214px;
+    font-family: "Bebas Neue Pro", sans-serif;
+    font-size: 18px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    text-decoration: none;
+}
+
+.post-third-column-text {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px 30px 10px;
+}
+
+.single-post-title-third {
+    color: #261d1d;
+    text-decoration: none;
+    max-width: 307px;
+    font-family: "Orpheus Pro", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+}
+
+.category-post-title-third {
+    margin-top: 10px;
+    font-family: "Bebas Neue Pro", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.single-second-column-title {
+    color: #261d1d;
+    font-family: "Orpheus Pro", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.single-third-column-image {
+    img {
+        max-width: 350px;
+        height: auto;
+    }
+}
+
+

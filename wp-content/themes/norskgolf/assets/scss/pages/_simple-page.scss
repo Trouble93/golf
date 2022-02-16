@@ -1,0 +1,52 @@
+.bread-crumb {
+    display: flex;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: #484a4b;
+        font-family: "Bebas Neue Pro", sans-serif;
+        font-size: 20px;
+        line-height: 35px;
+        text-align: left;
+    }
+
+    span {
+        margin-left: 10px;
+        content: "";
+        background-image: url(/wp-content/themes/norskgolf/assets/images/arrow.svg);
+        width: 6px;
+        height: 10px;
+        display: block;
+    }
+}
+
+.simple-page {
+    padding: 0 30px;
+    max-width: 1188px;
+    text-align: left;
+    margin: 128px 0 165px 226px;
+    @media (max-width: 1000px) {
+        margin: 40px 0 60px 100px;
+    }
+    @media (max-width: 700px) {
+        margin: 20px auto;
+    }
+
+    .page-content {
+        color: #484a4b;
+        font-family: "Orpheus Pro", sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 38px;
+        text-align: left;
+    }
+}
+
+.simple-page-title {
+    font-family: "Orpheus Pro", sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+}

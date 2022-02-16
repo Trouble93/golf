@@ -1,0 +1,359 @@
+
+.content {
+    background-color: #efefef;
+
+    .home-menu {
+        ul {
+            padding-left: 0;
+            column-gap: 34px;
+
+            li:nth-child(2) {
+                background-color: #076a76;
+
+                a {
+                    color: white;
+                }
+            }
+
+            li:nth-child(1)  {
+                background-color: #49cc8b;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .main-bg {
+
+        max-width: 1500px;
+        padding: 0 15px;
+        margin: 0 auto;
+        @media (max-width: 1422px) {
+            margin: 30px auto 0 auto;
+        }
+
+        .home-menu {
+            gap: 30px;
+            display: flex;
+            @media (max-width: 1422px) {
+                display: none;
+            }
+
+            .links-menu {
+                @media (max-width: 1422px) {
+                    display: none;
+                }
+                margin-left: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 45px;
+
+                .skolen {
+                    content: url(../assets/images/golfskolenLogo.svg);
+                }
+
+                .guiden {
+                    content: url(../assets/images/golfguiden-sort.svg);
+                }
+
+                .box {
+                    content: url(../assets/images/Image_64.png);
+                }
+            }
+        }
+
+        .first-column-image {
+            overflow: hidden;
+        }
+    ;
+
+        .content-wrapper {
+            display: flex;
+            column-gap: 19px;
+            flex-wrap: wrap;
+
+            .posts-first {
+                display: flex;
+                flex-direction: column;
+                row-gap: 19px;
+                @media (max-width: 1064px) {
+                    margin: 0 auto;
+                }
+
+                .first-column {
+                    width: 100%;
+                    max-width: 663px;
+                    overflow: hidden;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        transition: 0.3s linear;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+
+                        width: 100%;
+                    }
+
+                    .category-post {
+                        text-decoration: none;
+                        font-family: "Bebas Neue Pro", sans-serif;
+                        font-size: 16px;
+                        font-weight: 700;
+                        text-align: left;
+                        text-transform: uppercase;
+                    }
+
+                    .post-title-first {
+                        text-decoration: none;
+                        color: #261d1d;
+                        font-family: "orpheuspro", sans-serif;
+                        font-size: 34px;
+                        font-weight: 700;
+                        line-height: 45px;
+                        text-align: left;
+                        margin-top: 0;
+                        @media (max-width: 800px) {
+                            font-size: 30px;
+                            line-height: 35px;
+                        }
+                    }
+
+                    .first-description {
+                        color: #221c1c;
+                        font-family: "Bebas Neue Pro", sans-serif;
+                        font-size: 24px;
+                        font-weight: 600;
+                        text-align: left;
+                        margin-bottom: 20px;
+                        @media (max-width: 800px) {
+                            font-size: 20px;
+
+                        }
+                    }
+                }
+            }
+
+            .post-text {
+                background: white;
+                margin: -20px 0 0 0;
+                padding: 15px 13px 20px 18px;
+                max-width: 347px;
+                @media (max-width: 766px) {
+                    max-width: unset;
+                    width: 100%;
+                }
+            }
+
+            .post-text1 {
+                background: white;
+                margin: -10px 0 0 0;
+                padding: 15px 30px 20px 30px;
+                max-width: 663px;
+
+            }
+
+            .posts-second {
+
+                display: flex;
+                flex-direction: column;
+                row-gap: 19px;
+                @media (max-width: 1064px) {
+                    margin: 20px auto;
+                }
+                @media (max-width: 766px) {
+                    flex: 1;
+                    margin: 20px auto;
+                }
+
+                .second-column-post-image {
+                    width: 100%;
+                    overflow: hidden;
+                }
+
+                .second-column {
+
+
+                    img {
+                        display: block;
+                        transition: 0.3s linear;
+                        width: 100%;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .category-post {
+                    text-decoration: none;
+                    background: white;
+                    max-width: 663px;
+                    font-family: "Bebas Neue Pro", sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-align: left;
+                    text-transform: uppercase;
+                }
+
+                .post-title-second {
+                    text-decoration: none;
+                    display: flex;
+                    color: #261d1d;
+                    font-family: "orpheuspro", sans-serif;
+                    font-size: 26px;
+                    font-weight: 700;
+                    line-height: 34px;
+                    text-align: left;
+                    max-width: 350px;
+                    width: 100%;
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    background: white;
+                    @media (max-width: 800px) {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-menu {
+        @media (max-width: 1422px) {
+            display: none;
+        }
+
+        ul {
+
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            li {
+                background: white;
+                object-fit: cover;
+                border: white solid 1px;
+                padding: 17px 15px;
+                border-radius: 100px;
+                color: #221b1b;
+                font-family: "Bebas Neue Pro", sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    color: #221b1b;
+                }
+            }
+        }
+    }
+
+    .posts-third {
+        gap: 18px;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        height: fit-content;
+        padding: 0 20px 20px 30px;
+        @media (max-width: 1337px) {
+            margin: 20px auto 0 auto !important;
+            flex: 0;
+        }
+
+        .single-second-column-title {
+            display: flex;
+            justify-content: center;
+            color: #261d1d;
+            font-family: "orpheuspro", sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        @media (max-width: 1440px) {
+            flex: 1;
+            background: white;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        img {
+            width: 101px;
+            height: 101px;
+            border-radius: 5px;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        .third-column-solopost {
+            display: flex;
+            column-gap: 19px;
+            overflow: hidden;
+
+            .post-third-column-text {
+                row-gap: 15px;
+                max-width: 247px;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                margin-top: 15px;
+                padding: 5px 10px 30px 5px;
+
+                .post-date {
+                    text-transform: lowercase;
+                    color: #746e6e;
+                    font-family: "Bebas Neue Pro", sans-serif;
+                    font-size: 14px;
+                    line-height: 14px;
+                    text-align: left;
+                }
+
+                .post-title-third {
+                    text-decoration: none;
+                    color: #261d1d;
+                    font-family: "Bebas Neue Pro", sans-serif;
+                    font-size: 18px;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+
+                }
+
+            }
+        }
+    }
+}
+
+
+.third-column-image {
+    overflow: hidden;
+    border-right: 5px;
+
+    img {
+        display: block;
+        width: 100%;
+        transition: 0.3s linear;
+    }
+
+    img:hover {
+        transform: scale(1.2);
+    }
+}
+
+.third-column-title {
+    color: #261d1d;
+    font-family: "orpheuspro", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+

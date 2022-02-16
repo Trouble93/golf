@@ -1,0 +1,686 @@
+*, :before, :after {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+    transition: 0.3s linear;
+}
+
+.header .search.active {
+    margin-left: auto;
+}
+
+main {
+    flex-grow: 1;
+}
+
+html.overflow-hidden {
+    overflow: hidden;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+
+body.active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    background-color: black;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.adv-block {
+    max-width: 1293px;
+    width: 100%;
+    height: 100%;
+    max-height: 333px;
+}
+
+.header-menus {
+    max-width: 365px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    background: #fff;
+    z-index: 10;
+    padding: 30px 30px 30px 43px;
+
+    .all-menus {
+        position: absolute;
+        transition: all .3s ease;
+        height: 100vh;
+        left: 0;
+        flex-direction: column;
+    }
+
+    .menu-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .close {
+            cursor: pointer;
+            transition: all .3s ease;
+            text-decoration: underline;
+            color: #221b1b;
+            font-family: "Bebas Neue Pro", sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            text-align: left;
+            &:hover{
+                color: #49cc8b;
+            }
+        }
+
+
+        .golfbox {
+
+            content: url(../assets/images/Image_64.png);
+            max-width: 140px;
+            width: 100%;
+            height: 100%;
+            padding: 18px 20px;
+            border: 1px solid #c6c6c6;
+            cursor: pointer;
+        }
+
+        .close.active {
+            display: block;
+
+        }
+    }
+
+    .container {
+        max-width: 1500px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .main-menu {
+        ul {
+            list-style: none;
+
+            li {
+                max-width: 322px;
+                max-height: 615px;
+                font-family: "orpheuspro", sans-serif;
+                font-size: 56px;
+                font-weight: 700;
+                line-height: 87px;
+                text-align: left;
+                @media (max-width: 650px) {
+                    font-size: 46px;
+                    line-height: 65px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #221b1b;
+                }
+            }
+        }
+    }
+
+    .header-submenu {
+        ul {
+            list-style: none;
+
+            li {
+                max-width: 232px;
+                max-height: 239px;
+                opacity: 0.76;
+                font-family: "Bebas Neue Pro", sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 38px;
+                text-align: left;
+
+                a {
+                    text-decoration: none;
+                    color: #221b1b;
+                }
+            }
+        }
+    }
+}
+
+.header {
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    padding: 30px 30px 30px 30px;
+
+    .header-top-menu {
+        padding-left: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+
+        @media (max-width: 800px) {
+            padding-left: 0;
+        }
+
+        .golfbox-mobile {
+            display: none;
+            content: url(../assets/images/Image_64.png);
+            max-width: 140px;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            @media (max-width: 800px) {
+                display: block;
+                padding-right: 40px;
+                margin-right: 20px;
+            }
+            @media (max-width: 380px) {
+                margin-right: 0;
+            }
+        }
+
+        .menu-name {
+            cursor: pointer;
+            position: relative;
+            color: #221b1b;
+            font-family: "Bebas Neue Pro", sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            text-align: left;
+            @media (max-width: 800px) {
+                display: none;
+            }
+
+            &:before {
+                content: url(../assets/images/Image_69.png);
+                position: absolute;
+                right: 120%;
+                top: 5px;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .menu-buttons {
+            width: 100%;
+            display: flex;
+            position: relative;
+        }
+    }
+
+    .search {
+        cursor: pointer;
+        position: relative;
+        color: #221b1b;
+        font-family: "Bebas Neue Pro", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        text-align: left;
+        @media (max-width: 800px) {
+            display: none;
+        }
+
+
+        &:before {
+            content: url(../assets/images/Image_70.svg);
+            position: absolute;
+            right: 120%;
+            top: 5px;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+.search-input.hidden{
+    display: none;
+}
+.search-input{
+    display: block;
+}
+.search-form.hidden{
+    display: none;
+    z-index: 5;
+}
+.search-form{
+    position: relative;
+    max-width: 1050px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    z-index: 10;
+    .search-field{
+        outline: 0;
+        background: 0 0;
+        color: #fff;
+        padding: 0 20px;
+        width: 100%;
+        text-align: center;
+        max-width: none;
+        border: none;
+        margin: 0 0 40px;
+        font-size: 80px;
+        height: 95px;
+        line-height: 110px;
+        font-family: 'BebasNeuePro',sans-serif;
+        font-weight: 700;
+        &::placeholder{
+           color: white;
+        }
+    }
+}
+.search-bg.hidden{
+    display: none;
+
+}
+.search-helper{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #fff;
+    font-family: 'BebasNeuePro',sans-serif;
+    z-index: 5;
+}
+.search-exit.hidden{
+    display: none;
+}
+.search-exit{
+    display: block;
+    position: fixed;
+    right: 5%;
+    top: 10%;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 999;
+    .search-exit-button{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        border-radius: 5px;
+        &:before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            left: 0;
+            background-color: #d4d3ce;
+            border-radius: 10px;
+            top: 50%;
+            transform: translateY(-50%) rotate(-45deg);
+            height: 3px;
+        }
+        &:after{
+            position: absolute;
+            content: '';
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: #d4d3ce;
+            border-radius: 5px;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            height: 3px;
+        }
+    }
+}
+.search-bg{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    z-index: 4;
+    overflow: auto;
+    padding: 2em 1em 3em;
+}
+.logo {
+    max-width: 242px;
+    max-height: 55px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (max-width: 800px) {
+        position: unset;
+        left: unset;
+        transform: unset;
+    }
+    @media (max-width: 800px) {
+        margin-right: auto;
+        a img {
+            max-width: 124px;
+            max-height: 29px;
+        }
+
+    }
+}
+
+.burger-menu {
+    display: none;
+    position: relative;
+    @media (max-width: 800px) {
+        display: block;
+        &:before {
+            content: '';
+            display: block;
+            height: 94px;
+            width: 1px;
+            background: #707070;
+            opacity: .5;
+            position: absolute;
+            left: -25px;
+            top: -37px;
+        }
+    }
+}
+
+.burger-open {
+    content: "";
+    background-image: url(../assets/images/Image_69.png);
+    z-index: 1;
+    width: 25px;
+    height: 20px;
+    @media (max-width: 800px) {
+        display: block;
+    }
+}
+
+
+.all-menus.active {
+    width: 100% !important;
+    left: 0;
+    top: 115px;
+}
+
+
+.menu-name.active {
+
+}
+
+.header-menus.active {
+    max-width: 400px;
+    width: 100%;
+    display: block;
+
+    @media (max-width: 800px) {
+        max-width: 800px;
+        width: 100%;
+    }
+}
+
+.golfbox.active {
+
+}
+
+.footer {
+    background: black;
+
+    .footer-logo {
+        background: white;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            max-width: 182px;
+            max-height: 41px;
+        }
+
+        a {
+            padding-bottom: 10px;
+        }
+
+        .redactor {
+            color: #272020;
+            font-family: "Bebas Neue Pro", sans-serif;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+    .black-footer {
+        margin: 0 auto;
+
+
+        .main-text {
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            font-family: "orpheuspro", sans-serif;
+            font-size: 34px;
+            font-weight: 700;
+            text-align: left;
+            @media (max-width: 800px) {
+                font-size: 26px;
+            }
+        }
+
+        .footer-main {
+            padding: 113px 15px 20px 15px;
+            display: flex;
+            justify-content: center;
+            column-gap: 70px;
+            align-items: baseline;
+            @media (max-width: 1042px) {
+                flex-direction: column;
+                row-gap: 20px;
+                padding-top: 30px;
+                margin-left: 54px;
+
+            }
+
+            .footer-image {
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+            }
+
+            .footer-submenu {
+                max-width: 350px;
+                width: 100%;
+                @media (max-width: 800px) {
+                    max-width: 239px;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 0;
+
+                    li {
+                        font-family: "Bebas Neue Pro", sans-serif;
+                        font-size: 22px;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        line-height: 38px;
+                        text-align: left;
+
+                        a {
+                            text-decoration: none;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+
+            .footer-menu {
+                max-width: 350px;
+                width: 100%;
+                @media (max-width: 800px) {
+                    max-width: 239px;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 0;
+
+                    li {
+
+                        font-family: "Bebas Neue Pro", sans-serif;
+                        font-size: 22px;
+                        line-height: 38px;
+                        text-align: left;
+
+                        a {
+                            text-decoration: none;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+
+            .footer-text {
+                max-width: 350px;
+                width: 100%;
+                @media (max-width: 800px) {
+                    max-width: 239px;
+                }
+
+                .footer-title {
+                    margin: 0 0;
+                    @media (max-width: 1042px) {
+                        &:after {
+                            margin-left: auto;
+                            content: "";
+                            background-image: url(../assets/images/Path_69.svg);
+                            width: 19px;
+                            height: 12px;
+                            display: block;
+                        }
+                    }
+                    @media (max-width: 800px) {
+                        font-size: 26px;
+
+                    }
+                }
+
+                .footer-description {
+
+                    color: #ffffff;
+                    font-family: "Bebas Neue Pro", sans-serif;
+                    font-size: 22px;
+                    line-height: 29px;
+                    text-align: left;
+                    @media (max-width: 1042px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-links {
+        @media (max-width: 1042px) {
+            &:after {
+                margin-left: auto;
+                content: "";
+                background-image: url(../assets/images/Path_69.svg);
+                width: 19px;
+                height: 12px;
+                display: block;
+            }
+        }
+    }
+
+    .social-links {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        display: flex;
+        justify-content: center;
+        column-gap: 16px;
+        border-top: 1px solid white;
+    }
+}
+
+.footer-cat {
+    position: relative;
+    @media (max-width: 1042px) {
+        &:after {
+            margin-left: auto;
+            content: "";
+            background-image: url(../assets/images/Path_69.svg);
+            width: 19px;
+            height: 12px;
+            display: block;
+        }
+    }
+}
+
+.footer-description.active {
+    display: block !important;
+    background-color: black;
+
+}
+
+.menu-footer-menu-container {
+    @media (max-width: 1042px) {
+        display: none;
+    }
+}
+
+.menu-footer-submenu-container {
+    @media (max-width: 1042px) {
+        display: none;
+    }
+}
+
+.menu-footer-submenu-container.active {
+    display: block !important;
+    background-color: black;
+
+}
+
+.menu-footer-menu-container.active {
+    display: block !important;
+    background-color: black;
+}
+
+#menu-header-menu {
+    li {
+        &:first-child + li {
+            a {
+                color: #076a76;
+            }
+        }
+
+        &:first-child {
+            a {
+                color: #49cc8b;
+
+            }
+        }
+    }
+}
+
+
+
+
