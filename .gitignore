@@ -58,3 +58,4 @@ error_log
 cgi-bin
 webstat/*
 _files
+Golf/
